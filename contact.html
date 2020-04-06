@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .section5{
+            background-color: white;
+            margin-bottom: 15em;
+            padding-top: 7em;
+            box-shadow: 1px 20px 15px -15px black;
+        }
+    </style>
+    <title>Contact Coolkiwikids</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <div class="logo"></div>
+        </a>
+        <div class="bar"><i class="fas fa-bars"></i></div>
+        <ul class="nav">
+            <div class="bar">
+                <i class="far fa-times-circle"></i>
+            </div>
+            <div class="inner-wrap">
+                <li><a href="specials.html">Specials</a></li>
+                <li><a href="helmets.html">Helmets</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </div>
+        </ul>
+    </header>
+    <div class="section5">
+        <div class="container">
+            <div class="tophead"><span>Questions?</span></div>
+            <p>Just send an <a href="hello@coolkiwikids.co.nz">email</a> or fill in the form below.<br>You can
+                also reach us under<br><a href="tel:+64-22-193-1902">+64 22 193 1902</a></p>
+            <form action="">
+                <div class="formGroup">
+                    <label for="name"></label>
+                    <input type="text" name="name" id="name" placeholder="name *" autocomplete="off" required>
+                    <label for="email"></label>
+                    <input type="text" name="email" id="email" placeholder="e-mail *" required>
+                </div>
+                <div class="formGroup">
+                    <label for="subject"></label>
+                    <input type="text" name="subject" id="subject" placeholder="subject">
+                </div>
+                <div class="formGroup">
+                    <textarea name="message" id="message" cols="30" rows="10"
+                        placeholder="leave a mesage"></textarea>
+                </div>
+                <div class="formGroup">
+                    <input type="submit" value="send" class="btn">
+                </div>
+            </form>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d25577.313007265508!2d174.6974455329451!3d-36.74263136728246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1storpedo7!5e0!3m2!1sen!2snz!4v1585197260239!5m2!1sen!2snz"
+                width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
+        </div>
+    </div>
+    <footer>
+        <div class="links">
+            <a href="images/Terms and Conditions.pdf"
+                class="terms" target="_blank">Terms and Conditions</a>
+
+            <a href="images/Privacy Policy.pdf"
+                class="terms" target="_blank">Privacy Policy</a>
+
+            <a href="https://www.facebook.com/coolkiwikids"><i class="fab fa-facebook"></i></a>
+
+            <a href="https://www.instagram.com/coolkiwikids/"><i class="fab fa-instagram-square"></i></a>
+        </div>
+        <p>© CoolKiwikids</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+
+        $('.nav').hide()
+        $('.bar').on('click', function () {
+            $('.nav').toggle(500)
+        });
+
+        // $(".slideshow > div:gt(0)").hide();
+
+        // setInterval(function() {
+        // $('.slideshow > div:first')
+        //     .slideToggle(100)
+        //     .next()
+        //     .slideToggle(100)
+        //     .end()
+        //     .appendTo('.slideshow');
+        // }, 3000);
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container{
+            margin: 0 0 5em 0;
+            padding: 10em 0;
+            box-shadow: 1px 20px 15px -15px black;
+        }
+    </style>
+    <title>Coolkiwikids Specials</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <div class="logo"></div>
+        </a>
+        <div class="bar"><i class="fas fa-bars"></i></div>
+        <ul class="nav">
+            <div class="bar">
+                <i class="far fa-times-circle"></i>
+            </div>
+            <div class="inner-wrap">
+                <li><a href="specials.html">Specials</a></li>
+                <li><a href="helmets.html">Helmets</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </div>
+        </ul>
+    </header>
+    <div class="section2">
+        <div class="container">
+            <div class="tophead"><span>Our Specials</span></div>
+            <div class="spaecials">
+                <div class="special">
+                    <img src="images/spaecials/Helmet_Chipmunk.png" alt="Chipmunk Helmet">
+                    <div class="caption">Helmet Chipmunk</div>
+                    <div class="prices"><span>$79.00</span> $59.00</div>
+                </div>
+                <div class="special">
+                    <img src="images/spaecials/Helmet_Leopard.png" alt="Leopard Helmet">
+                    <div class="caption">Helmet Leopard</div>
+                    <div class="prices"><span>$79.00</span> $59.00</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="links">
+            <a href="images/Terms and Conditions.pdf"
+                class="terms" target="_blank">Terms and Conditions</a>
+
+            <a href="images/Privacy Policy.pdf"
+                class="terms" target="_blank">Privacy Policy</a>
+
+            <a href="https://www.facebook.com/coolkiwikids"><i class="fab fa-facebook"></i></a>
+
+            <a href="https://www.instagram.com/coolkiwikids/"><i class="fab fa-instagram-square"></i></a>
+        </div>
+        <p>© CoolKiwikids</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+
+        $('.nav').hide()
+        $('.bar').on('click', function () {
+            $('.nav').toggle(500)
+        });
+
+        // $(".slideshow > div:gt(0)").hide();
+
+        // setInterval(function() {
+        // $('.slideshow > div:first')
+        //     .slideToggle(100)
+        //     .next()
+        //     .slideToggle(100)
+        //     .end()
+        //     .appendTo('.slideshow');
+        // }, 3000);
+
+    </script>
+</body>
+</html>

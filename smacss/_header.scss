@@ -1,0 +1,58 @@
+header{
+    background-color: $background-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+
+    .bar{
+        font-size: 2em;
+        color: $light-color;
+        margin-right: 1em;
+    }
+
+    .logo{
+        background-image: url();
+        background-position: center;
+        background-repeat: no-repeat; 
+        background-size: contain;       
+        height: 5em;
+        width: 5em;
+        margin-left: 2em;
+    }
+
+    .nav{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: $dark-color;
+        width: 100%;
+        height: 100vh;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .bar{
+            color: $light-color;
+            font-size: 2em;
+            position: absolute;
+            top: .5em;
+            right: 0;
+        }
+
+        .inner-wrap{
+            display: inline-block;
+        }
+
+        a{
+            font-size: 4em;
+            display: block;
+            margin: .5em 0;
+            text-decoration: none;
+            color: $light-color;
+        }
+    }
+}
